@@ -1,0 +1,20 @@
+.text-header{
+    color: #0BAA94;
+    text-align: center;
+}
+.text-header-2{
+    color: #6C6C6D;
+    text-align: center;
+}
+a{
+    text-align: center;
+}
+.tabs{
+    height: 100%;
+}
+div{
+    margin-bottom: 25px;
+}
+.links div{
+    margin-bottom: 0px;
+}
