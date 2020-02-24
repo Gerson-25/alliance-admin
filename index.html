@@ -35,10 +35,10 @@
             <button href="" class="waves-effect waves-light btn col l12 s12 tablinks" onclick="openTab(event,'list-promotions')">Lista</button>
         </div>
         <div class="col l4 s12">
-            <button href="" class="waves-effect waves-light btn col l12 s12 tablinks" onclick="openTab(event,'new-promotion')">Establecimientos</button>
+            <button href="" class="waves-effect waves-light btn col l12 s12 tablinks" onclick="openTab(event,'new-promotion')">agregar promocion</button>
         </div>
         <div class="col l4 s12">
-            <button href="" class="waves-effect waves-light btn col l12 s12 tablinks" onclick="openTab(event,'new-establishment')">Rubros</button>
+            <button href="" class="waves-effect waves-light btn col l12 s12 tablinks" onclick="openTab(event,'new-establishment')">Agregar Establecimiento</button>
         </div>
     </div> <!--end of link buttons-->
 
@@ -61,13 +61,14 @@
             </select>
 
             <div class="row">
-                <div class="input-field">
+                <div class="input-field col l12" >
                     <label for="">Titulo</label>
-                    <input type="text">
+                    <input id="text-title" type="text">
                 </div>
             </div>
             <div class="row">
-                <div class="input-field">
+                <div class="input-field col l12">
+                    <i class="material-icons prefix">border_color</i>
                     <label for="">Descripcion</label>
                     <input type="text">
                 </div>
@@ -90,22 +91,24 @@
     <!--new establishment container-->
     <div id="new-establishment" class="row tabs new-establishment">
         <div class="container ">
-            <div class="col l6">
-                <div class="row">
-                    <div class="input-field">
-                        <label for="">Titulo</label>
-                        <input type="text">
+            <div class="col l12">
+                <div class="col l6">
+                    <div class="row">
+                        <div class="input-field">
+                            <label for="">Titulo</label>
+                            <input type="text">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col l6">
-                <label for="">Rubros</label>
-                <select name="" class="browser-default" id="Establishments" class="col l12">
-                    <option id="options" value="">Salud</option>
-                    <option id="options" value="">Deporte</option>
-                    <option id="options" value="">Entretenimiento</option>
-                    <option id="options" value="">Mascotas</option>
-                </select>
+                <div class="col l6">
+                    <label for="">Rubros</label>
+                    <select name="" class="browser-default" id="Establishments" class="col l12">
+                        <option id="options" value="">Salud</option>
+                        <option id="options" value="">Deporte</option>
+                        <option id="options" value="">Entretenimiento</option>
+                        <option id="options" value="">Mascotas</option>
+                    </select>
+                </div>
             </div>
             <div class="col l12">
                 <div class="input-field col l12 s12">
@@ -133,6 +136,7 @@
     <!--list promotions container-->
     <div id="list-promotions" class="row tabs list-promotions">
         <div class="container">
+            
             <label for="">Rubros</label>
             <select name="" class="browser-default" id="categories" class="col s6">
                 <option id="options" value="">Salud</option>

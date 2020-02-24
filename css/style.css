@@ -20,15 +20,8 @@ a{
 }
 .active{
     display: block;
-    padding: 25px;
-    border-top-width: 2px;
-    border-top-style: solid;
-    border-top-color: #0BAA94;
-    height: 100%;
 }
-div{
-    margin-bottom: 25px;
-}
+
 .links div{
     margin-bottom: 0px;
 }
