@@ -1,3 +1,4 @@
+
 .text-header{
     color: #0BAA94;
     text-align: center;
@@ -10,6 +11,19 @@ a{
     text-align: center;
 }
 .tabs{
+    display: none;
+    padding: 25px;
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: #0BAA94;
+    height: 100%;
+}
+.active{
+    display: block;
+    padding: 25px;
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: #0BAA94;
     height: 100%;
 }
 div{
@@ -17,4 +31,29 @@ div{
 }
 .links div{
     margin-bottom: 0px;
+}
+
+.list-promotions .promotions-detail-container{
+    border: solid 1px #0BAA94; 
+    margin-top: 25px;
+}
+.margin-text{
+    margin: 10px;
+}
+
+
+.margin-text{
+    margin: 10px;
+}
+
+#promotion-picture{
+    background-image: url('../img/pizza-picture.png');
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+    width: 100%;
+    height: 250px;
+}
+.medium-size-text{
+    font-size: 20px;
 }

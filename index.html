@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <!--google icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -14,7 +16,7 @@
 </head>
 
 <body>
-
+    <!--header-->
     <div class="row">
         <div class="col l12 s12 text-header">
             <h3>Alianzas y Beneficios</h3>
@@ -25,62 +27,68 @@
                 de tu grupo.
             </h5>
         </div>
-    </div>
+    </div> <!--end of header-->
+
+    <!--link buttons-->
     <div class="links row">
         <div class="col l4 s12">
-            <a href="" class="waves-effect waves-light btn col l12 s12">Lista</a>
+            <button href="" class="waves-effect waves-light btn col l12 s12 tablinks" onclick="openTab(event,'list-promotions')">Lista</button>
         </div>
         <div class="col l4 s12">
-            <a href="" class="waves-effect waves-light btn col l12 s12">Establecimientos</a>
+            <button href="" class="waves-effect waves-light btn col l12 s12 tablinks" onclick="openTab(event,'new-promotion')">Establecimientos</button>
         </div>
         <div class="col l4 s12">
-            <a href="" class="waves-effect waves-light btn col l12 s12">Rubros</a>
+            <button href="" class="waves-effect waves-light btn col l12 s12 tablinks" onclick="openTab(event,'new-establishment')">Rubros</button>
         </div>
-    </div>
-    <div class="row tabs new-promotion">
+    </div> <!--end of link buttons-->
+
+    <!--new promotions container-->
+    <div id="new-promotion" class="row tabs new-promotion">
         <div class="container">
             <label for="">Rubros</label>
-                <select name="" class="browser-default" id="categories" class="col s6">
-                    <option id="options" value="">Salud</option>
-                    <option id="options" value="">Deporte</option>
-                    <option id="options" value="">Entretenimiento</option>
-                    <option id="options" value="">Mascotas</option>
-                </select>
-                <label for="">Establecimientos</label>
-                <select name="" class="browser-default" id="Establishments" class="col s6">
-                    <option id="options" value="">Salud</option>
-                    <option id="options" value="">Deporte</option>
-                    <option id="options" value="">Entretenimiento</option>
-                    <option id="options" value="">Mascotas</option>
-                </select>
+            <select name="" class="browser-default" id="categories" class="col s6">
+                <option id="options" value="">Salud</option>
+                <option id="options" value="">Deporte</option>
+                <option id="options" value="">Entretenimiento</option>
+                <option id="options" value="">Mascotas</option>
+            </select>
+            <label for="">Establecimientos</label>
+            <select name="" class="browser-default" id="Establishments" class="col s6">
+                <option id="options" value="">Salud</option>
+                <option id="options" value="">Deporte</option>
+                <option id="options" value="">Entretenimiento</option>
+                <option id="options" value="">Mascotas</option>
+            </select>
 
-                <div class="row">
-                    <div class="input-field">
-                        <label for="">Titulo</label>
-                        <input type="text">
-                    </div>
+            <div class="row">
+                <div class="input-field">
+                    <label for="">Titulo</label>
+                    <input type="text">
                 </div>
-                <div class="row">
-                    <div class="input-field">
-                        <label for="">Descripcion</label>
-                        <input type="text">
-                    </div>
+            </div>
+            <div class="row">
+                <div class="input-field">
+                    <label for="">Descripcion</label>
+                    <input type="text">
                 </div>
-                <div class="col l12">
-                    <a href="" class="waves-effect waves-light btn col l2 s2">Añadir imagen</a>
-                    <img src="img/image-placeholder.png" alt="" class="col l2 s2">
+            </div>
+            <div class="col l12">
+                <a href="" class="waves-effect waves-light btn col l2 s2">Añadir imagen</a>
+                <img src="img/image-placeholder.png" alt="" class="col l2 s2">
+            </div>
+            <div class="col l12">
+                <div class=" offset-l8 col l4">
+                    <a href="" class="waves-effect black btn col l12 s12 ">Crear nueva promocion</a>
                 </div>
-                <div class="col l12">
-                    <div class=" offset-l8 col l4">
-                        <a href="" class="waves-effect black btn col l12 s12 ">Crear nueva promocion</a>
-                    </div>
 
-                </div>
+            </div>
 
         </div>
-    </div>
+    </div> <!--end of new promotios container-->
 
-    <div class="row tabs new-establishment">
+
+    <!--new establishment container-->
+    <div id="new-establishment" class="row tabs new-establishment">
         <div class="container ">
             <div class="col l6">
                 <div class="row">
@@ -91,7 +99,7 @@
                 </div>
             </div>
             <div class="col l6">
-                <label for="">Establecimientos</label>
+                <label for="">Rubros</label>
                 <select name="" class="browser-default" id="Establishments" class="col l12">
                     <option id="options" value="">Salud</option>
                     <option id="options" value="">Deporte</option>
@@ -100,11 +108,11 @@
                 </select>
             </div>
             <div class="col l12">
-                <div class="input-field">
+                <div class="input-field col l12 s12">
                     <label for="">Direccion</label>
                     <input type="text">
                 </div>
-                <div class="input-field">
+                <div class="input-field col l12 s12">
                     <label for="">Telefono</label>
                     <input type="text">
                 </div>
@@ -119,11 +127,51 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> <!--end of new estalishments container-->
+
+
+    <!--list promotions container-->
+    <div id="list-promotions" class="row tabs list-promotions">
+        <div class="container">
+            <label for="">Rubros</label>
+            <select name="" class="browser-default" id="categories" class="col s6">
+                <option id="options" value="">Salud</option>
+                <option id="options" value="">Deporte</option>
+                <option id="options" value="">Entretenimiento</option>
+                <option id="options" value="">Mascotas</option>
+            </select>
+            <label for="">Establecimientos</label>
+            <select name="" class="browser-default" id="Establishments" class="col s6">
+                <option id="options" value="">Salud</option>
+                <option id="options" value="">Deporte</option>
+                <option id="options" value="">Entretenimiento</option>
+                <option id="options" value="">Mascotas</option>
+            </select>
+            <div class="promotions-detail-container col 12">
+                <div class="col l12 ">
+                    <h4>2 pizzas personales a solo $6.00</h4>
+                </div>
+                <div id="promotion-picture" class="col l12">
+                </div>
+                <div class="col l12">
+                    <h5>
+                        9 HUNDRED PIZZA
+                    </h5>
+                </div>
+                <div class="col l12">
+                    <div>
+                        <p>
+                            este es un ejemplo de la Descripcion de una de las promociones
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!--end of list promotions container-->
 
 
 
-<script src="js/app.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
